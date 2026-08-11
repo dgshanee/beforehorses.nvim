@@ -17,7 +17,7 @@ end
 BeforeHorses.config = {}
 
 H.command_callback = function()
-	print("BEFORE HORSES")
+	print(H.config)
 end
 
 vim.api.nvim_create_user_command("BeforeHorses", H.command_callback, {})
